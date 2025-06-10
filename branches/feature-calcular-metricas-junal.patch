@@ -1,0 +1,98 @@
+From 2badba24e6337acd8d0bd3623f259b69fd5f85b7 Mon Sep 17 00:00:00 2001
+From: janiopi <janio072003@hotmail.com>
+Date: Sat, 7 Jun 2025 14:16:43 -0500
+Subject: [PATCH 1/2] feat[#2]: Implementar git hook commit-msg
+
+---
+ git/hooks/commit-msg.sh | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+ create mode 100644 git/hooks/commit-msg.sh
+
+diff --git a/git/hooks/commit-msg.sh b/git/hooks/commit-msg.sh
+new file mode 100644
+index 0000000..6ed5065
+--- /dev/null
++++ b/git/hooks/commit-msg.sh
+@@ -0,0 +1,18 @@
++#!/bin/bash
++#Hook para asegurar un correcto mensaje de commit usando prefijos estandar
++
++# leer el mensaje del commit
++MSJ_COMMIT=$1
++MENSAJE=$(cat "$MSJ_COMMIT")
++
++# solo se permiten tipos feat, fix, refactor, docs, test
++PATRON="^(feat|fix|refactor|docs|test)\[#([0-9]+)\]: .+"
++
++if ! echo "$MENSAJE" | grep -Eq "$PATRON"; then
++    echo " Error: El mensaje del commit debe seguir el patron '<tipo>[#n]: mensaje'"
++    echo " Tipos permitidos: feat, fix, refactor, docs, test"
++    echo " Ejemplo valido: feat[#1]: Inicializar repositorio y estructura"
++    exit 1
++fi
++
++exit
+\ No newline at end of file
+-- 
+2.47.0.windows.2
+
+
+From 1173ee8b23f27d7e236ff120d004986cdd4f35b3 Mon Sep 17 00:00:00 2001
+From: JunalChowdhuryG <chowdhurygomezjunaljohir@gmail.com>
+Date: Sun, 8 Jun 2025 10:59:18 -0500
+Subject: [PATCH 2/2] feat[#4]: Crear calcular_metricas.py con funciones
+ registrar_git_log y escribir_csv
+
+---
+ src/calcular_metricas.py | 39 +++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 39 insertions(+)
+ create mode 100644 src/calcular_metricas.py
+
+diff --git a/src/calcular_metricas.py b/src/calcular_metricas.py
+new file mode 100644
+index 0000000..0c5453a
+--- /dev/null
++++ b/src/calcular_metricas.py
+@@ -0,0 +1,39 @@
++import subprocess
++import csv
++
++
++# funcion que captura el historial de commits de un repositorio git
++def registrar_git_log():
++    # captura la salida del comando git log
++    try:
++        historial = subprocess.run(
++            ['git', 'log', '--pretty=format:%H|%ad|%s', '--date=iso'],
++            capture_output=True, text=True, check=True
++        )
++        commits = []
++        for line in historial.stdout.splitlines():
++            commit_hash, date, message = line.split('|', 2)
++            commits.append((commit_hash, date, message))
++        return commits
++    except subprocess.CalledProcessError as e:
++        print(f"error al ejecutar el comando git log: {e}")
++        return []
++
++
++# funcion que escribe los datos de los commits en un archivo CSV
++def escribir_csv(commits, output_file='metricas/commits.csv'):
++    # escribe los datos en un archivo CSV
++    try:
++        with open(output_file, 'w', newline='') as f:
++            writer = csv.writer(f)
++            writer.writerow(['commit_hash', 'fecha', 'tipo_de_issue'])
++            for commit in commits:
++                writer.writerow(commit)
++    except IOError as e:
++        print(f"error al escribir en el CSV: {e}")
++
++
++# main
++if __name__ == "__main__":
++    commits = registrar_git_log()
++    escribir_csv(commits)
+-- 
+2.47.0.windows.2
+
