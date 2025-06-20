@@ -5,180 +5,192 @@
 * **Grupo:** `2`
 * **Correo:** `junal.chowdhury.g@uni.pe` 
 * **Repositorio Grupal:** [Grupo 2: Repositorio Grupal](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3)  
+* **Repositorio Individual**: [https://github.com/JunalChowdhuryG/Proyecto-8-Personal-Grupo-2](https://github.com/JunalChowdhuryG/Proyecto-8-Personal-Grupo-2)
 
 ## **Descripcion:**
-Este repositorio documenta mis contribuciones al **Proyecto 8: Integracion de metricas agiles: Burn-Down y Lead Time con Scripts Personalizados** del **Grupo 2** (Junal, Janio, Andres) para la asignatura **Desarrollo de Software CC3S2** en el periodo academico **25-1** (2025). El proyecto consiste en desarrollar un mini dashboard agil local que calcula metricas como burn-down y lead time a partir de un repositorio Git, usando scripts Python y Bash. 
-## **Sprints**
+Este repositorio documenta mis contribuciones al **Proyecto 8: Integracion de metricas agiles: Burn-Down y Lead Time con Scripts Personalizados** del **Grupo 2** (Junal, Janio, Andres) para la asignatura **Desarrollo de Software CC3S2** en el periodo academico **25-1** (2025). El proyecto consiste en desarrollar un mini dashboard agil local que calcula metricas como *burn-down* y *lead time* a partir de un repositorio Git, utilizando scripts Python y Bash. Mis tareas incluyeron la inicializacion del repositorio, desarrollo y optimizacion de scripts (`calcular_metricas.py`, `notificar_retrasos.py`), y planificacion de sprints
 
-### **Sprint 1**
-#### Demostracion en video
-[Sprint 1 (Dia 3: 8/06/2025) Grupo 2 Proyecto 8 ](https://www.youtube.com/watch?v=iJIAYbbfaYw)
-#### **Mi Rol**
-* Fui responsable de establecer la estructura fundamental del proyecto ([Issue #1](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/issues/1))
-* Desarrollar el codigo de `calcular_metricas.py`([Issue #4](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-4/issues/1))
-* Ademas, cree cinco Issue en un [Epic: Sprint 1](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/issues/6) para planificar el Sprint 1, garantizando una asignacion clara de tareas para el equipo
+## Mi Rol
+Fui lider de desarrollo y coordinador de sprints, responsable de:
+- **Sprint 1**: Configurar la estructura del repositorio ([Issue #1](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/issues/1)) y desarrollar `calcular_metricas.py` ([Issue #4](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/issues/4)).
+- **Sprint 2**: Implementar el calculo de *lead time* en `calcular_metricas.py` ([Issue #15](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/issues/15)).
+- **Sprint 3**: Crear `notificar_retrasos.py` para notificar retrasos ([Issue #26](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/issues/26)) y optimizar `calcular_metricas.py` ([Issue #28](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/issues/28)).
+- **Planificacion**: Crear issues para los sprints:
+  - [Epic: Sprint 1](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/issues/6))
+  - [Epic: Sprint 2](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/issues/24))
+  - [Epic: Sprint 3](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/issues/30))
 
-#### **Contribuciones**
 
-1. **2025-06-06: Creacion de 5 Issues para Sprint 1**
-    - **Descripcion**: Defini las tareas del Sprint 1 creando cinco issues en un [Epic: Sprint 1](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/issues/6) para guiar al equipo
-   - **Issues**:
-     - [Issue #1: Inicializar repositorio y estructura](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/issues/1)
-     - [Issue #2: Implementar hook commit-msg](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/issues/2)
-     - [Issue #3: Crear script generar_kanban.sh inicial](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/issues/3)
-     - [Issue #4: Desarrollar calcular_metricas.py](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/issues/4)
-     - [Issue #5: Crear datos iniciales en issues.json](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/issues/5)
-   - **Estado**: Cerrados (9 jun 2025)
-
-2. **2025-06-07: Inicializacion de la Estructura del Repositorio (Issue #1)**
-   - **Descripcion**: Configure la estructura de carpetas y archivos iniciales para soportar el desarrollo modular, cumpliendo con [Issue #1](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/issues/1)
-   - **Rama**: `feature-estructura`
-   - **Commit**: `c53fe9c` [feat[#1]: Inicializar repositorio y estructura](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/commit/c53fe9c8b64135b3f7241c423c8e3750053cf4c6)
-     - ~50 lineas, creo `src/`, `tests/`, `.gitignore`, `README.md`, `requirements.txt`, `pytest.ini`, `issues.json`
-   - **Pull Request**: [merge[#1]: Fusionar rama feature-estructura](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/pull/7)
-     - Revisado por Andres y Janio, fusionado a `develop` el 9 jun 2025
-   - **Estado**: Cerrado (9 jun 2025)
+## Estructura del Repositorio
 ```
-C:.
-├───metricas
-├───src
-├───tests/
-├───requirements.txt
-├───README.md
-└───.gitignore
+/Proyecto-8-Personal-Grupo-2/
+├── README.md
+├── CONTRIBUTIONS.md
+├── branches/
+│   ├── sprint-1-feature-estructura-junal.patch
+│   ├── sprint-1-feature-calcular-metricas-junal.patch
+│   ├── sprint-2-feature-lead-time-junal.patch
+│   ├── sprint-3-feature-notificar-retrasos-junal.patch
+│   ├── sprint-3-feature-optimizar-calcular-metricas-junal.patch
+├── scripts-personal/
+│   ├── metricas/
+│   ├── reports/     
+│   ├── src/
+│        ├── calcular_metricas.py
+│        └── notificar_retrasos.py
+├── videos/
+│   └── videos-sprints.md
+├── docs_parciales/
+│   ├── doc_calcular_metricas.md
+│   └── doc_final_summary-junal.md
 ```
-- **Proposito de las carpetas (repositorio grupal)**:
-  - `src/`: Contiene el codigo Python, como `calcular_metricas.py`, que desarrolle para parsear el historial de Git.
-  - `metricas/`: Almacena los CSVs generados, como `commits.csv`, con datos de commits.
-  - `tests/`: Preparado para pruebas unitarias con `pytest`
-  - `.gitignore`: Excluye archivos como `__pycache__` y `.venv/`.
-  - `requirements.txt`: Vacio, ya que usamos bibliotecas estandar
 
+- **branches/**: Contiene parches que reflejan mis contribuciones, con formato `<sprint>-feature-<task>-junal.patch`.
+- **src/**: Scripts Python que desarrolle.
+- **videos/**: Videos de demostracion por sprint, mostrando ejecucion de scripts y resultados.
+- **docs_parciales/**: Documentacion parcial de mis aportes
 
-3. **2025-06-08: Desarrollo de calcular_metricas.py (Issue #4)**
-   - **Descripcion**: Implemente `calcular_metricas.py` para parsear el historial de Git y generar un CSV, cumpliendo con [Issue #4](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/issues/4)
-   - **Rama**: `feature-calcular-metricas`
-   - **Commit**: `1173ee8` [feat[#4]: Crear calcular_metricas.py con funciones registrar_git_log y escribir_csv](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/commit/1173ee8b23f27d7e236ff120d004986cdd4f35b3)
-   - **Pull Request**: [merge[#4]: Fusionar rama feature-calcular-metricas a develop](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/pull/9)
-     - Revisado por Janio y Andres, fusionado a `develop` el 9 jun 2025
-   - **Estado**: Cerrado (9 jun 2025)
+## Comprobacion de Funcionalidad
+Para verificar la funcionalidad de mis scripts (`calcular_metricas.py`, `notificar_retrasos.py`) sin aplicar parches, usa los scripts en `scripts-personal/src/`. Estos pasos asumen que `src/`, `metricas/`, y `reports/emails/` estan presentes en el repositorio clonado
 
-`src/calcular_metricas.py`:
-```python
-import subprocess
-import csv
-
-# funcion que captura el historial de commits de un repositorio git
-def registrar_git_log():
-    # captura la salida del comando git log
-    try:
-        historial = subprocess.run(
-            ['git', 'log', '--pretty=format:%H|%ad|%s', '--date=iso'],
-            capture_output=True, text=True, check=True
-        )
-        commits = []
-        for line in historial.stdout.splitlines():
-            commit_hash, date, message = line.split('|', 2)
-            commits.append((commit_hash, date, message))
-        return commits
-    except subprocess.CalledProcessError as e:
-        print(f"error al ejecutar el comando git log: {e}")
-        return []
-
-
-# funcion que escribe los datos de los commits en un archivo CSV
-def escribir_csv(commits, output_file='metricas/commits.csv'):
-    # escribe los datos en un archivo CSV
-    try:
-        with open(output_file, 'w', newline='') as f:
-            writer = csv.writer(f)
-            writer.writerow(['commit_hash', 'fecha', 'tipo_de_issue'])
-            for commit in commits:
-                writer.writerow(commit)
-    except IOError as e:
-        print(f"error al escribir en el CSV: {e}")
-
-
-# main
-if __name__ == "__main__":
-    commits = registrar_git_log()
-    escribir_csv(commits)
-
-```
-- **Uso**: Sirve como base para calcular metricas agiles en futuros sprints 
-- **Salida**: Genera `metricas/commits.csv`, por ejemplo:
-  ```
-    commit_hash,fecha,tipo_de_issue
-    a066af57769041d809ecd9ccfdc49828b6e4979b,2025-06-07 14:37:26 -0500,merge[#2]: Fusionar rama feature-git-hook-commit-msg
-    2badba24e6337acd8d0bd3623f259b69fd5f85b7,2025-06-07 14:16:43 -0500,feat[#2]: Implementar git hook commit-msg
-    ....
-  ```
-- **Funcionalidad**: Lee el historial de commits de Git usando el comando `git log --pretty=format:%H|%ad|%s --date=iso` y genera un archivo CSV (`metricas/commits.csv`) con las columnas `commit_hash`, `fecha`, y `tipo_de_issue`
-- **Estructura**:
-  - **`registrar_git_log()`**: Ejecuta `git log`, parsea la salida en tuplas `(hash, fecha, mensaje)`, y maneja errores con `try-except`
-  - **`escribir_csv()`**: Escribe los datos en un CSV
-  - **Main**: Coordina la ejecucion de ambas funciones
-
-
-
-#### Instrucciones para Ejecutar los Parches y el Script Python
-Los parches en `branches/` (`feature-estructura.patch` y `feature-calcular-metricas.patch`) permiten recrear los cambios de mis ramas en el repositorio grupal, incluyendo la estructura de carpetas y el script `calcular_metricas.py`. A continuacion, se detalla como aplicarlos y ejecutar el script:
-
-1. **Clonar el repositorio grupal**:
+1. **Clonar el repositorio individual**:
    ```bash
-   git clone https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3.git
-   cd Grupo-2-Practica-Calificada-3
+   git clone https://github.com/JunalChowdhuryG/Proyecto-8-Personal-Grupo-2.git
+   cd Proyecto-8-Personal-Grupo-2
+   cd scripts-personal
    ```
 
-2. **Crear una rama temporal para aplicar los parches**:
+2. **Configurar el entorno Python**:
    ```bash
-   git checkout -b temp-patches
+   python -m venv .venv
+   source .venv/Scripts/activate
+   ```
+   No se requieren dependencias externas, ya que los scripts usan bibliotecas estandar
+
+3. **Ejecutar `calcular_metricas.py`**:
+   ```bash
+   python src/calcular_metricas.py
+   ```
+   **Salida**: Genera `metricas/commits.csv` (commit hash, fecha, mensaje, dias desde inicio) y `metricas/lead_time.csv` (issue, *lead time* en horas). Ejemplo:
+   - `metricas/commits.csv`:
+     ```
+     commit_hash,fecha,tipo_de_issue,dia_desde_inicio
+     ca97fa484427d075cf3747922285b919c31a486a,2025-06-10 18:39:17 -0500,Agregar calcular_metricas.py,0
+     ed277ba8e39b63b5dc7f3aabe13527b5e962bbe8,2025-06-10 18:38:51 -0500,Agregar patch feature-estructura-junal.patch,-1
+     a1d67a0abd4c1412f714822125ae31a03e599c9b,2025-06-10 18:37:48 -0500,Agregar patch feature-estructura-junal.patch,-1
+     ```
+   - `metricas/lead_time.csv`:
+     ```
+     issue_id,lead_time_hours
+     1,1.18
+     ```
+   Verifica con:
+   ```bash
+   cat metricas/commits.csv
+   cat metricas/lead_time.csv
    ```
 
-3. **Copiar los parches desde mi repositorio personal**:
-   - clona mi repositorio personal:
-     ```bash
-     git clone https://github.com/JunalChowdhuryG/Proyecto-8-Personal-Grupo-2.git
-     cd Proyecto-8-Personal-Grupo-2
+4. **Ejecutar `notificar_retrasos.py`**:
+   ```bash
+   python src/notificar_retrasos.py
+   ```
+   **Salida**:
      ```
-   - copia los parches al repositorio grupal:
+     Issue #1: 1.18 horas
+     OK
+     ```
+   - Para verificar la generacion de correos, simula un retraso (>72 horas) en `metricas/lead_time.csv`:
      ```bash
-     cp branches/feature-estructura-junal.patch ../Grupo-2-Practica-Calificada-3/
-     cp branches/feature-calcular-metricas-junal.patch ../Grupo-2-Practica-Calificada-3/
-     cd ../Grupo-2-Practica-Calificada-3
+     echo "issue_id,lead_time_hours" > metricas/lead_time.csv
+     echo "1,80" >> metricas/lead_time.csv
+     ```
+   - Vuelve a ejecutar:
+     ```bash
+     python src/notificar_retrasos.py
+     ```
+     **Salida**:
+     ```
+     Issue #1: 80.0 horas
+     Email generado: reports/emails/issue_1_delay.txt
+     ```
+     Verifica el correo:
+     ```bash
+     cat reports/emails/issue_1_delay.txt
+     ```
+     **Contenido esperado**:
+     ```
+     From: devops@local
+     To: junal@local
+     Subject: Retraso en issue #1
+
+     Hola junal,
+     El issue #1 lleva un lead time de 80.0 horas, superior al umbral de 72 horas. Por favor, revisar estado.
      ```
 
-4. **Aplicar el parche de feature-estructura**:
-   - este parche crea la estructura inicial del repositorio
+## Instrucciones de Uso
+1. **Clonar el repositorio individual**:
    ```bash
-   git apply feature-estructura-junal.patch
+   git clone https://github.com/JunalChowdhuryG/Proyecto-8-Personal-Grupo-2.git
+   cd Proyecto-8-Personal-Grupo-2
+   ```
+
+2. **Aplicar parches**:
+   Inicializa un repositorio Git para aplicar los parches:
+   ```bash
+   git init
+   git commit --allow-empty -m "Inicializar repositorio para parches"
+   ```
+   Aplica los parches en orden:
+   ```bash
+   git apply branches/sprint-1-feature-estructura-junal.patch
    git commit -m "feat[#1]: Aplicar parche feature-estructura"
-   ```
-
-5. **Aplicar el parche de feature-calcular-metricas y ejecutar el script**:
-   - este parche agrega `src/calcular_metricas.py`
-   ```bash
-   git apply feature-calcular-metricas-junal.patch
+   git apply branches/sprint-1-feature-calcular-metricas-junal.patch
    git commit -m "feat[#4]: Aplicar parche feature-calcular-metricas"
+   git apply branches/sprint-2-feature-lead-time-junal.patch
+   git commit -m "feat[#15]: Aplicar parche feature-lead-time"
+   git apply branches/sprint-3-feature-notificar-retrasos-junal.patch
+   git commit -m "feat[#26]: Aplicar parche feature-notificar-retrasos"
+   git apply branches/sprint-3-feature-optimizar-calcular-metricas-junal.patch
+   git commit -m "feat[#28]: Aplicar parche feature-optimizar-calcular-metricas"
    ```
-   - Configura el entorno Python:
-     ```bash
-     python -m venv .venv
-     source .venv/Scripts/activate
-     ```
-   - Ejecuta el script:
+   **Nota**: Si hay conflictos debido a fusiones con rebase en el repositorio grupal, se usa `git apply --reject` y resuelve manualmente los archivos `.rej`.
+
+3. **Configurar el entorno Python**:
+   ```bash
+   python -m venv .venv
+   source .venv/Scripts/activate
+   ```
+   No se requieren dependencias externas, ya que los scripts usan bibliotecas estandar
+
+4. **Ejecutar scripts**:
+   - Generar metricas:
      ```bash
      python src/calcular_metricas.py
      ```
-   - **Resultado**: Genera `metricas/commits.csv` con el historial de commits del repositorio
-
-6. **Verificar la salida**:
-   - abre `metricas/commits.csv` para ver los datos generados, como:
-    ```
-    commit_hash,fecha,tipo_de_issue
-    a066af57769041d809ecd9ccfdc49828b6e4979b,2025-06-07 14:37:26 -0500,merge[#2]: Fusionar rama feature-git-hook-commit-msg
-    2badba24e6337acd8d0bd3623f259b69fd5f85b7,2025-06-07 14:16:43 -0500,feat[#2]: Implementar git hook commit-msg
-    dd7f0d82c20723421cad478417c7fbbeac2290e4,2025-06-07 13:34:38 -0500,merge[#1]: Fusionar rama feature-estructura
-    c53fe9c8b64135b3f7241c423c8e3750053cf4c6,2025-06-07 12:59:43 -0500,feat[#1]: Inicializar repositorio y estructura
-    2f1a006a839a69846ad239df3e5848772a4ad9f1,2025-06-06 18:13:21 -0500,feat[#0]: Agregar plantilla de Historia Usuario
+     **Salida**: Crea `metricas/commits.csv` y `metricas/lead_time.csv` con datos de commits y *lead time*.
+   - Detectar retrasos:
+     ```bash
+     python src/notificar_retrasos.py
      ```
+     **Salida**: Genera correos simulados en `reports/emails/` para issues con *lead time* > 72 horas.
+
+5. **Verificar resultados**:
+   ```bash
+   cat metricas/commits.csv
+   cat metricas/lead_time.csv
+   cat reports/emails/issue_1_delay.txt
+   ```
+
+6. **Ver videos de demostracion**:
+   Videos en `videos/` muestran la ejecucion de scripts y resultados por sprint. Links actualizados en [CONTRIBUTIONS.md](CONTRIBUTIONS.md).
+
+## Contribuciones
+Para detalles de mis contribuciones, incluyendo commits, pull requests, y videos, consulta [CONTRIBUTIONS.md](CONTRIBUTIONS.md). Resumen:
+- **Sprint 1**: Estructura del repositorio, `calcular_metricas.py`, planificacion de issues
+- **Sprint 2**: Calculo de *lead time*, planificacion de issues
+- **Sprint 3**: Notificaciones de retrasos, optimizacion de metricas, planificacion de issues
+
+## Notas
+- Los parches reflejan commits atomicos con mensajes descriptivos, cumpliendo con la rubrica
+- Los scripts en `src/` son versiones finales, incluyendo optimizaciones de Sprint 3
+- Los videos estan pendientes de carga; los links en `CONTRIBUTIONS.md` seran actualizados
