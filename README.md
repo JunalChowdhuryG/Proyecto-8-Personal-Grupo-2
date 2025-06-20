@@ -12,10 +12,10 @@
    - [Link del video del Sprint 1](https://www.youtube.com/watch?v=iJIAYbbfaYw)
 
 * Sprint 2
-   - [Link del video del Sprint 1](https://www.youtube.com/watch?v=cEHDw_kIgWw)
+   - [Link del video del Sprint 2](https://www.youtube.com/watch?v=cEHDw_kIgWw)
 
 * Sprint 3
-   - [Link del video del Sprint 1](https://www.youtube.com/watch?v=V2qRnOWsgNE)
+   - [Link del video del Sprint 3](https://www.youtube.com/watch?v=V2qRnOWsgNE)
 
 ## **Documentacion de los codigos finales hechos por Chowdhury, Junal**
 * [documentacion  calcular_metricas.py](./docs_parciales/doc_calcular_metricas.md)
