@@ -1,7 +1,7 @@
 # **Contribuciones de Chowdhury Gomez, Junal**
 ## **Sprint 1**
 ### Demostracion en video
-[Sprint 1 Grupo 2 Proyecto 8 ]()
+[Sprint 1 Grupo 2 Proyecto 8 ](https://www.youtube.com/watch?v=iJIAYbbfaYw)
 
 1. **2025-06-06: Creacion de 5 Issues para Sprint 1**
     - **Descripcion**: Defini las tareas del Sprint 1 creando cinco issues en un [Epic: Sprint 1](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/issues/6) para guiar al equipo
@@ -32,7 +32,7 @@
 
 ## **Sprint 2**
 ### Demostracion en video
-[Sprint 2 Grupo 2 Proyecto 8 ]()
+[Sprint 2 Grupo 2 Proyecto 8 ](https://www.youtube.com/watch?v=cEHDw_kIgWw)
 
 1. **2025-06-09: Creacion de 4 Issues para Sprint 2**
     - **Descripcion**: Defini las tareas del Sprint 2 creando cuatro issues en un [Epic: Sprint 2](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/issues/24) para guiar al equipo
@@ -53,7 +53,7 @@
 
 ## **Sprint 3**
 ### Demostracion en video
-[Sprint 3 Grupo 2 Proyecto 8 ]()
+[Sprint 3 Grupo 2 Proyecto 8 ](https://www.youtube.com/watch?v=V2qRnOWsgNE)
 
 1. **2025-06-16: Creacion de 5 Issues para Sprint 3**
     - **Descripcion**: Defini las tareas del Sprint 3 creando cinco issues en un [Epic: Sprint 3](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3/issues/37) para guiar al equipo

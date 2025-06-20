@@ -7,6 +7,21 @@
 * **Repositorio Grupal:** [Grupo 2: Repositorio Grupal](https://github.com/JunalChowdhuryG/Grupo-2-Practica-Calificada-3)  
 * **Repositorio Individual**: [https://github.com/JunalChowdhuryG/Proyecto-8-Personal-Grupo-2](https://github.com/JunalChowdhuryG/Proyecto-8-Personal-Grupo-2)
 
+## **Videos**
+*  Sprint 1
+   - [Link del video del Sprint 1](https://www.youtube.com/watch?v=iJIAYbbfaYw)
+
+* Sprint 2
+   - [Link del video del Sprint 1](https://www.youtube.com/watch?v=cEHDw_kIgWw)
+
+* Sprint 3
+   - [Link del video del Sprint 1](https://www.youtube.com/watch?v=V2qRnOWsgNE)
+
+## **Documentacion de los codigos finales hechos por Chowdhury, Junal**
+* [documentacion  calcular_metricas.py](./docs_parciales/doc_calcular_metricas.md)
+* [documentacion notificar_retrasos.py](./docs_parciales/doc_notificar_retrasos.md)
+
+
 ## **Descripcion:**
 Este repositorio documenta mis contribuciones al **Proyecto 8: Integracion de metricas agiles: Burn-Down y Lead Time con Scripts Personalizados** del **Grupo 2** (Junal, Janio, Andres) para la asignatura **Desarrollo de Software CC3S2** en el periodo academico **25-1** (2025). El proyecto consiste en desarrollar un mini dashboard agil local que calcula metricas como *burn-down* y *lead time* a partir de un repositorio Git, utilizando scripts Python y Bash. Mis tareas incluyeron la inicializacion del repositorio, desarrollo y optimizacion de scripts (`calcular_metricas.py`, `notificar_retrasos.py`), y planificacion de sprints
 
