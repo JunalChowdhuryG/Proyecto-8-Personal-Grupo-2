@@ -1,46 +1,7 @@
-From 2badba24e6337acd8d0bd3623f259b69fd5f85b7 Mon Sep 17 00:00:00 2001
-From: janiopi <janio072003@hotmail.com>
-Date: Sat, 7 Jun 2025 14:16:43 -0500
-Subject: [PATCH 1/2] feat[#2]: Implementar git hook commit-msg
-
----
- git/hooks/commit-msg.sh | 18 ++++++++++++++++++
- 1 file changed, 18 insertions(+)
- create mode 100644 git/hooks/commit-msg.sh
-
-diff --git a/git/hooks/commit-msg.sh b/git/hooks/commit-msg.sh
-new file mode 100644
-index 0000000..6ed5065
---- /dev/null
-+++ b/git/hooks/commit-msg.sh
-@@ -0,0 +1,18 @@
-+#!/bin/bash
-+#Hook para asegurar un correcto mensaje de commit usando prefijos estandar
-+
-+# leer el mensaje del commit
-+MSJ_COMMIT=$1
-+MENSAJE=$(cat "$MSJ_COMMIT")
-+
-+# solo se permiten tipos feat, fix, refactor, docs, test
-+PATRON="^(feat|fix|refactor|docs|test)\[#([0-9]+)\]: .+"
-+
-+if ! echo "$MENSAJE" | grep -Eq "$PATRON"; then
-+    echo " Error: El mensaje del commit debe seguir el patron '<tipo>[#n]: mensaje'"
-+    echo " Tipos permitidos: feat, fix, refactor, docs, test"
-+    echo " Ejemplo valido: feat[#1]: Inicializar repositorio y estructura"
-+    exit 1
-+fi
-+
-+exit
-\ No newline at end of file
--- 
-2.47.0.windows.2
-
-
 From 1173ee8b23f27d7e236ff120d004986cdd4f35b3 Mon Sep 17 00:00:00 2001
 From: JunalChowdhuryG <chowdhurygomezjunaljohir@gmail.com>
 Date: Sun, 8 Jun 2025 10:59:18 -0500
-Subject: [PATCH 2/2] feat[#4]: Crear calcular_metricas.py con funciones
+Subject: [PATCH 1/2] feat[#4]: Crear calcular_metricas.py con funciones
  registrar_git_log y escribir_csv
 
 ---
@@ -93,6 +54,33 @@ index 0000000..0c5453a
 +if __name__ == "__main__":
 +    commits = registrar_git_log()
 +    escribir_csv(commits)
+-- 
+2.47.0.windows.2
+
+
+From 59988ada1240c25a1c8f1f46b6b293de9f75b41c Mon Sep 17 00:00:00 2001
+From: JunalChowdhuryG <chowdhurygomezjunaljohir@gmail.com>
+Date: Sun, 8 Jun 2025 11:01:03 -0500
+Subject: [PATCH 2/2] docs[#4]: Crear archivo commits.csv a partir de
+ calcular_metricas.py
+
+---
+ metricas/commits.csv | 6 ++++++
+ 1 file changed, 6 insertions(+)
+ create mode 100644 metricas/commits.csv
+
+diff --git a/metricas/commits.csv b/metricas/commits.csv
+new file mode 100644
+index 0000000..797c1f2
+--- /dev/null
++++ b/metricas/commits.csv
+@@ -0,0 +1,6 @@
++commit_hash,fecha,tipo_de_issue
++a066af57769041d809ecd9ccfdc49828b6e4979b,2025-06-07 14:37:26 -0500,merge[#2]: Fusionar rama feature-git-hook-commit-msg
++2badba24e6337acd8d0bd3623f259b69fd5f85b7,2025-06-07 14:16:43 -0500,feat[#2]: Implementar git hook commit-msg
++dd7f0d82c20723421cad478417c7fbbeac2290e4,2025-06-07 13:34:38 -0500,merge[#1]: Fusionar rama feature-estructura
++c53fe9c8b64135b3f7241c423c8e3750053cf4c6,2025-06-07 12:59:43 -0500,feat[#1]: Inicializar repositorio y estructura
++2f1a006a839a69846ad239df3e5848772a4ad9f1,2025-06-06 18:13:21 -0500,feat[#0]: Agregar plantilla de Historia Usuario
 -- 
 2.47.0.windows.2
 

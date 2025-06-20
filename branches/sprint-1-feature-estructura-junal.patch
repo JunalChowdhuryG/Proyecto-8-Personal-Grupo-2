@@ -1,57 +1,7 @@
-From 2f1a006a839a69846ad239df3e5848772a4ad9f1 Mon Sep 17 00:00:00 2001
-From: Junal Chowdhury Gomez
- <137580801+JunalChowdhuryG@users.noreply.github.com>
-Date: Fri, 6 Jun 2025 18:13:21 -0500
-Subject: [PATCH 1/2] feat[#0]: Agregar plantilla de Historia Usuario
-
----
- .github/ISSUE_TEMPLATE/user-story.md | 29 ++++++++++++++++++++++++++++
- 1 file changed, 29 insertions(+)
- create mode 100644 .github/ISSUE_TEMPLATE/user-story.md
-
-diff --git a/.github/ISSUE_TEMPLATE/user-story.md b/.github/ISSUE_TEMPLATE/user-story.md
-new file mode 100644
-index 0000000..831b50f
---- /dev/null
-+++ b/.github/ISSUE_TEMPLATE/user-story.md
-@@ -0,0 +1,29 @@
-+---
-+name: User Story
-+about: Describe this issue template's purpose here.
-+title: ''
-+labels: user_story
-+assignees: ''
-+
-+---
-+
-+# [ID] [Titulo]
-+
-+## Historia de Usuario
-+
-+**Como** [rol específico, ej., "desarrollador", "tester"]  
-+**Necesito** [funcionalidad o característica clara]  
-+**Para que** [razon de valor o negocio]
-+
-+## Contexto y Suposiciones
-+- [Restricciones, suposiciones o dependencias conocidas.]
-+- [Historias de usuario o issues relacionados, si aplica.]
-+
-+## Criterios de Aceptación
-+- [ ] [Criterio específico, ej., Crear carpeta `scripts/`.]
-+- [ ] [Otro criterio, ej., Validar mensajes de commit.]
-+- [ ] [Prueba o verificación, ej., Ejecutar script y verificar salida.]
-+
-+## Información Adicional
-+- **Estado**: [Open|In Progress|Closed]  
-+- **Responsable**: [Nombre, ej., Junal]
--- 
-2.47.0.windows.2
-
-
 From c53fe9c8b64135b3f7241c423c8e3750053cf4c6 Mon Sep 17 00:00:00 2001
 From: JunalChowdhuryG <chowdhurygomezjunaljohir@gmail.com>
 Date: Sat, 7 Jun 2025 12:59:43 -0500
-Subject: [PATCH 2/2] feat[#1]: Inicializar repositorio y estructura
+Subject: [PATCH] feat[#1]: Inicializar repositorio y estructura
 
 ---
  .gitignore        |  4 ++++
